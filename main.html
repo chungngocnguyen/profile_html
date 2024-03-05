@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Profile</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .profile-container {
+      text-align: center;
+    }
+
+    .avatar {
+      width: 150px;
+      height: 150px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-bottom: 30px;
+    }
+
+    .avatar img {
+      width: 100%;
+      height: auto;
+    }
+
+    .username {
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      text-decoration: underline;
+      cursor: pointer;
+    }
+
+    h1 {
+      font-size: 29px;
+      color: #333;
+    }
+    header {
+      text-align: center;
+      margin-bottom: 200px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- <header>
+    <h1>User Profile</h1>
+  </header> -->
+
+
+  <div class="profile-container">
+    <div class="avatar">
+      <img src="./avatar.jpg" alt="User Avatar">
+    </div>
+    <div class="username" onclick="goToIndexPage()">Nguyễn Ngọc Chung</div>
+  </div>
+
+  <script>
+    function goToIndexPage() {
+      window.location.href = "index.html";
+    }
+  </script>
+
+</body>
+</html>
